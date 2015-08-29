@@ -14,6 +14,7 @@
 		FFD54F841B91DEB700B2F9B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD54F831B91DEB700B2F9B7 /* Images.xcassets */; };
 		FFD54F871B91DEB700B2F9B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFD54F851B91DEB700B2F9B7 /* LaunchScreen.xib */; };
 		FFD54F931B91DEB700B2F9B7 /* Passing_Data_ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD54F921B91DEB700B2F9B7 /* Passing_Data_ChallengeTests.m */; };
+		FFD54F9E1B91DF4A00B2F9B7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD54F9D1B91DF4A00B2F9B7 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		FFD54F8C1B91DEB700B2F9B7 /* Passing Data ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Passing Data ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD54F911B91DEB700B2F9B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFD54F921B91DEB700B2F9B7 /* Passing_Data_ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Passing_Data_ChallengeTests.m; sourceTree = "<group>"; };
+		FFD54F9C1B91DF4A00B2F9B7 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FFD54F9D1B91DF4A00B2F9B7 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				FFD54F7D1B91DEB700B2F9B7 /* ViewController.h */,
 				FFD54F7E1B91DEB700B2F9B7 /* ViewController.m */,
 				FFD54F801B91DEB700B2F9B7 /* Main.storyboard */,
+				FFD54F9C1B91DF4A00B2F9B7 /* DetailViewController.h */,
+				FFD54F9D1B91DF4A00B2F9B7 /* DetailViewController.m */,
 				FFD54F831B91DEB700B2F9B7 /* Images.xcassets */,
 				FFD54F851B91DEB700B2F9B7 /* LaunchScreen.xib */,
 				FFD54F761B91DEB700B2F9B7 /* Supporting Files */,
@@ -222,6 +227,7 @@
 				FFD54F7F1B91DEB700B2F9B7 /* ViewController.m in Sources */,
 				FFD54F7C1B91DEB700B2F9B7 /* AppDelegate.m in Sources */,
 				FFD54F791B91DEB700B2F9B7 /* main.m in Sources */,
+				FFD54F9E1B91DF4A00B2F9B7 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

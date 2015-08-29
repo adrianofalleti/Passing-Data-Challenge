@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "DetailViewController.h"
+
 
 @interface ViewController ()
 
@@ -18,6 +20,35 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([sender isKindOfClass:[UIButton class]]) {
+        [self.textField resignFirstResponder];
+        
+        if ([segue.destinationViewController isKindOfClass:[DetailViewController class]]) {
+            
+            DetailViewController *viewController = segue.destinationViewController;
+            
+            viewController.stringa = self.textField.text;
+            
+            
+            
+            
+        }
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+}
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
