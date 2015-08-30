@@ -7,13 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+//creo un protocollo con un metodo per far si che ciò che sia scritto sul textField sia riportato indietro nel primo viewController
+@protocol DetailViewControllerDelegate <NSObject>
 
-@interface DetailViewController : UIViewController
+@required
+-(void)didUpdateText:(NSString *)testo;
+
+@end
+
+@interface DetailViewController : UIViewController <UITextFieldDelegate>
 
 @property (strong,nonatomic) NSString *stringa;
 
 @property (weak, nonatomic) IBOutlet UILabel *labeL;
 
+@property (strong, nonatomic) IBOutlet UITextField *textField2;
 
+@property (weak,nonatomic) id <DetailViewControllerDelegate> delegato;
+
+- (IBAction)update:(UIButton *)sender;
 
 @end

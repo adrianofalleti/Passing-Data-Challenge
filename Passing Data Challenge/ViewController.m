@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.textField.delegate = self;
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
@@ -31,7 +32,7 @@
             
             viewController.stringa = self.textField.text;
             
-            
+            viewController.delegato = self;
             
             
         }
@@ -47,7 +48,18 @@
     
 }
 
+#pragma mark DetailViewControllerDelegate metodo
 
+-(void)didUpdateText:(NSString *)testo {
+    
+    self.textField.text = testo;
+    
+}
+#pragma mark UITextFieldDelegate metodo
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self.textField resignFirstResponder];
+    return YES;
+}
 
 
 - (void)didReceiveMemoryWarning {

@@ -69,6 +69,7 @@
                         <viewControllerLayoutGuide type="bottom" id="zCx-Xw-HgB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8cM-LQ-8V0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write something in the textfield..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ul-JJ-5jx">
@@ -80,21 +81,46 @@
                                     <rect key="frame" x="16" y="85" width="368" height="21"/>
                                 </variation>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LdM-Ku-Sqn">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="67" y="188" width="266" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYM-ws-nBh">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="UPDATE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="171" y="258" width="59" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="update:" destination="aJr-MO-xJX" eventType="touchUpInside" id="aGw-Em-O3j"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="3Ul-JJ-5jx"/>
+                                <exclude reference="LdM-Ku-Sqn"/>
+                                <exclude reference="qYM-ws-nBh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="3Ul-JJ-5jx"/>
+                                <include reference="LdM-Ku-Sqn"/>
+                                <include reference="qYM-ws-nBh"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="labeL" destination="3Ul-JJ-5jx" id="sJX-fr-2VW"/>
+                        <outlet property="textField2" destination="LdM-Ku-Sqn" id="3C0-By-wdh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58a-Jd-TNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
